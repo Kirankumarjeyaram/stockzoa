@@ -9,10 +9,11 @@ if( $_SESSION["current_user"] != "admin" )
 echo $_SESSION["id"];
 
 ?>
+
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="materialize.css">
-<link rel="stylesheet" type="text/css" href="materialize.min.css">
+<link rel="stylesheet" type="text/css" href="../css/materialize.css">
+<link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
 </head>
 
 <body>
@@ -25,12 +26,12 @@ echo $_SESSION["id"];
         <li><a href="">Requests</a></li>
         <li><a href="">Stock</a></li>
         <li><a href="">Accounts</a></li>
-        <li><a href="signout.php">Signout</a></li>
+        <li><a href="../signout.php">Signout</a></li>
       </ul>
     </div>
   </nav>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="materialize.js"></script>
+<script type="text/javascript" src="../js/materialize.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
 </body>
 </html>  
 

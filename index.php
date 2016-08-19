@@ -20,11 +20,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
  	$message = "Login successful!";
      if( $username == "admin")
      {
-         header("location: admin.php");
+         header("location: ./admin/admin.php");
      }
      else
      {
-         header("location: labassist.php");
+         header("location: ./labassist/mylab.php");
      }
  	    }else {
         	$message = "Your login name or Password is invalid";
@@ -33,8 +33,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 ?> 
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="materialize.css">
-<link rel="stylesheet" type="text/css" href="materialize.min.css">
+<link rel="stylesheet" type="text/css" href="css/materialize.css">
+<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 </head>
 
 <body>
@@ -83,7 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php 
 echo $message ; 
 ?></div>    
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="materialize.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
 </body>
 </html>       
